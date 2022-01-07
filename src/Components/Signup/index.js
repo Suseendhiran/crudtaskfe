@@ -15,7 +15,7 @@ function Index() {
   ];
   const handleSignUp = (values) => {
     axios
-      .post(`/customers/signup`, values)
+      .post(`/users/signup`, values)
       .then((res) => {
         localStorage.setItem("token", res.data.token);
       })
